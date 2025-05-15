@@ -17,6 +17,7 @@ import lombok.NoArgsConstructor;
 public class Tienda {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    @Column(name="tienda_id")
     private Long id_tienda;
 
     @Column(name = "nombre",nullable = false)
